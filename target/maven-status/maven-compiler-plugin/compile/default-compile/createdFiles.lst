@@ -1,0 +1,10 @@
+br\com\boliche\service\GameService.class
+br\com\boliche\repository\GameRepository.class
+br\com\boliche\util\ScoreUtils.class
+br\com\boliche\resource\handler\ResponseExceptionHandler.class
+br\com\boliche\resource\GameResource.class
+br\com\boliche\dto\GameDTO.class
+br\com\boliche\dto\PlayerDTO.class
+br\com\boliche\dto\FrameDTO.class
+br\com\boliche\BolicheApplication.class
+br\com\boliche\entity\Game.class
