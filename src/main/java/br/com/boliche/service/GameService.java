@@ -28,10 +28,10 @@ public class GameService {
 	
 	public void save(Game game) {
 		List<Game> games = this.gameRepository.findAllByAlleyAndName(game.getAlley(), game.getName());
-		Game lastGame = games.stream().max(Comparator.comparing(Game::getId)).orElse(null);
-		if(!ObjectUtils.isEmpty(lastGame) && lastGame.getPins() + game.getPins() > 10) {
-			throw new IllegalArgumentException("A pontuação passou de 10 pontos");
-		}
+//		Game lastGame = games.stream().max(Comparator.comparing(Game::getId)).orElse(null);
+//		if(!ObjectUtils.isEmpty(lastGame) && lastGame.getPins() + game.getPins() > 10) {
+//			throw new IllegalArgumentException("A pontuação passou de 10 pontos");
+//		}
 		this.gameRepository.save(game);
 	}
 	
